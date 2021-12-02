@@ -1,0 +1,3 @@
+src=https://github.com/magicmonty/bash-git-prompt
+initial_commit=6f4c272200fb6f72a2f1442b2894c6d7cf8cc0a7
+current_commit=148d502b666a0d62ecc83680817596b097a70f2a

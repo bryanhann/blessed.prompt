@@ -1,12 +1,4 @@
 #!/bin/bash
-export_ () { export $1="$2"; }
-
-export_ \
-    MONTY_CLONE \
-    ${__BLESSED_ROOT__}/__build__/monty.git
-
-export_ \
-    MONTY_ACTIVATION_SCRIPT \
-    ${MONTY_CLONE}/gitprompt.sh
-
+export MONTY_VENDOR=${__BLESSED_ROOT__}/vendor
+export MONTY_SCRIPT=${MONTY_VENDOR}/monty.148d502/gitprompt.sh
 ${__BLESSED_DOT__} ${__BLESSED_CLIENT__}.$*

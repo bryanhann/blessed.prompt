@@ -1,3 +1,2 @@
 #!/path/to/sh
-blessed.monty install
-. ${MONTY_ACTIVATION_SCRIPT}
+. $MONTY_SCRIPT
