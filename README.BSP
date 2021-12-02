@@ -1,0 +1,49 @@
+The BSP (BLESSED SCRIPT PROTOCOL) defines an agreement
+between three entities: a USER, a CLIENT script, and a
+PROXY script that mediates use of CLIENT.
+
+=PROMISES=
+
+    USER promises never to invoke CLIENT directly, but only
+    via PROXY. PROXY promises to invoke CLIENT on behalf of
+    user after special preparation of the shell environment
+    (see DETAILS) below.  The invoked CLIENT may presume
+    that the environment has been so prepared.
+
+=PREPARATION=
+
+    When PROXY is {sourced|executed} it {sources|executes}
+    CLIENT with its received argument list after preparing
+    the environment by setting two variables.
+        __BLESSED_SCRIPT__
+            is set to the full path of SCRIPT
+        __BLESSED_DOT__
+            is set to '.' if PROXY was sourced
+            is set to '' otherwise
+
+=INSTALLATION=
+
+    It is the responsibility of USER to install the
+    PROXYs of CLIENT to convenient locations--typically
+    somewhere on the PATH. This is easily done when the
+    CLIENTs are hosted in reposititories that adhere
+    to the BLESSED REPO PROTOCAL (BRP) described in
+    a companion document.
+
+=RECOMMENDATIONS=
+
+    (1) It is recommended that CLIENTs be kept off the
+    PATH lest they be inadvertanly invoked.
+
+    (2) It is recommended that PROXY scripts be stored
+    in the LBIN (~/.local/bin) which allows usability
+    without need to configure PATH on systems that are
+    already properly configured to have LBIN as a PATH
+    component.
+
+    (3) It is recommended that all PROXY scripts stored
+    in LBIN begin with the name [blessed.] to reduce
+    potential name conflicts and to ease in cleansing
+    LBIN of all PROXY scripts at such times that this
+    is desired.
+

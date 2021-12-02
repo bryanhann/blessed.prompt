@@ -1,0 +1,14 @@
+This repository is a reference implementation of the
+BLESSED SOURCE PROTOCOL and the BLESSED REPO PROTOCOL
+described in companion documents.
+
+In short, executing the script [./install] will result
+in the following proxy assignments:
+
+    [~/.local/bin/blessed.manOfEden] -> [./suite.adam/adam]
+    [~/.local/bin/blessed.womanOfEden] -> [./suite.eve/eve]
+
+That is to say, an executable script named [blessed.manOfEden]
+will be placed in the local bin, after which the invokation of
+[blessed.manbOfEden] will result in a managed invokation of the
+script [./suite.adam/adam] (and likewise with with [eve]).

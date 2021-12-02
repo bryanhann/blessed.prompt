@@ -1,0 +1,2 @@
+echo ++EVE.CAIN [$0] [$*]
+echo --EVE.CAIN [$0] [$*]

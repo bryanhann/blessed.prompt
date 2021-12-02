@@ -1,0 +1,2 @@
+echo ++EVE.ABEL [$0] [$*]
+echo --EVE.ABEL [$0] [$*]

@@ -1,0 +1,4 @@
+#!/bin/bash
+echo ++EVE [$0] [$*]
+set | grep ^__BLESSED
+echo --EVE [$0] [$*]

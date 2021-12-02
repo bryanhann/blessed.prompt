@@ -1,0 +1,2 @@
+echo ++ADAM.SETH [$0] [$*]
+echo --ADAM.SETH [$0] [$*]

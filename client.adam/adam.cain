@@ -1,0 +1,2 @@
+echo ++ADAM.CAIN [$0] [$*]
+echo --ADAM.CAIN [$0] [$*]

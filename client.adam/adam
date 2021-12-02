@@ -1,0 +1,4 @@
+#!/bin/bash
+echo ++ADAM [$0] [$*]
+set | grep ^__BLESSED
+echo --ADAM [$0] [$*]
