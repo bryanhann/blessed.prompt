@@ -1,1 +1,10 @@
-echo bh.monty: STUB
+#!/usr/bin/env python3
+import sys
+from pathlib import Path
+ROOT=Path(__file__).absolute().parent.parent
+SCRIPT=ROOT/'vendor/monty.148d502/gitprompt.sh'
+if '--source' in sys.argv:
+    print(SCRIPT)
+else:
+    print( """To activate monty:
+    $ source `bh.monty --source` """)
