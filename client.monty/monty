@@ -1,4 +1,0 @@
-#!/bin/bash
-export MONTY_VENDOR=${__BLESSED_ROOT__}/vendor
-export MONTY_SCRIPT=${MONTY_VENDOR}/monty.148d502/gitprompt.sh
-. $MONTY_SCRIPT
